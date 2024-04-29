@@ -8,7 +8,7 @@
         width="200"
       />
       <img
-        src="assets/images/Akademi Logo.png"
+        [src]="academyLogo"
         alt="Etiya Logo"
         class="etiya-logo"
         width="200"
@@ -16,7 +16,7 @@
     </div>
   </ng-template>
 
-  <h1 class="etiya-title">Welcome!</h1>
-  <p class="etiya-subtitle">Sign in with your organizational account</p>
+  <h1 class="etiya-title">{{ "common_welcome" | translate }}!</h1>
+  <p class="etiya-subtitle" translate>auth_signinSubtitle</p>
   <etiya-login-form></etiya-login-form>
 </etiya-single-focus-layout>
