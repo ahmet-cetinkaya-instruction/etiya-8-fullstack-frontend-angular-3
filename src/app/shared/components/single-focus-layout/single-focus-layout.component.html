@@ -1,0 +1,12 @@
+<div class="etiya-container">
+  <!-- <ng-container *ngIf="headerTemplate">
+    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+  </ng-container> -->
+  @if (headerTemplate) {
+  <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+  }
+
+  <main>
+    <ng-content></ng-content>
+  </main>
+</div>
